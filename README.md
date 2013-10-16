@@ -5,7 +5,7 @@ This repository includes the Eagle design files (schematics and layout) for our
 popular WS2812 'smart' LED package, which contains an embedded, costant-current
 LED driver (the WS2811).
 
-The shield includes 40 WS2812 LEDs in a 5x8 array. But, contrary to a traditional
+The shield includes **40 WS2812 LEDs in a 5x8 array configuration**. But, contrary to a traditional
 LED matrix, the shield uses a single data line (Digital Pin 8) from the 
 Arduino to control brightness and color!  The shield also includes a power 
 terminal for using an external supply.
@@ -20,7 +20,7 @@ projects like this! We'll always put our best effort in every project, and
 release all our design files and code for you to use.
 
 [Tutorials, technical details, and more information about this product can be
-found here: http://acrobotic.com/catalog/product/view/id/63][1]
+found here: http://acrobotic.com/catalog/product/view/id/69][1]
 
 On our store, we also [carry a breakout board][2] as well as [a 10-pack][3] of 2812
 RGB LEDs for you to use on your next project!
