@@ -317,7 +317,7 @@
 </library>
 <library name="Ai_Passives">
 <packages>
-<package name="0603-CAP">
+<package name="CAP-0603">
 <wire x1="-1.524" y1="0.635" x2="1.524" y2="0.635" width="0.0508" layer="39"/>
 <wire x1="1.524" y1="0.635" x2="1.524" y2="-0.635" width="0.0508" layer="39"/>
 <wire x1="1.524" y1="-0.635" x2="-1.524" y2="-0.635" width="0.0508" layer="39"/>
@@ -327,7 +327,7 @@
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-1.905" y="0.635" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.905" y="0.635" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 </package>
@@ -336,16 +336,16 @@
 <library name="Ai_Connectors">
 <packages>
 <package name="1X02-ST">
-<wire x1="-3.75" y1="3.4" x2="-3.75" y2="-2.24" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-2.24" x2="-3.75" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-3.6" x2="3.75" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="3.75" y1="-3.6" x2="3.75" y2="-2.24" width="0.127" layer="21"/>
-<wire x1="3.75" y1="-2.24" x2="3.75" y2="3.4" width="0.127" layer="21"/>
-<wire x1="3.75" y1="3.4" x2="-3.75" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-2.24" x2="3.75" y2="-2.24" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="3.4" x2="-3.75" y2="-2.24" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-2.24" x2="-3.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-3.6" x2="3.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="-3.6" x2="3.75" y2="-2.24" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="-2.24" x2="3.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="3.4" x2="-3.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-2.24" x2="3.75" y2="-2.24" width="0.2032" layer="21"/>
 <pad name="2" x="1.75" y="0" drill="1.016" diameter="2.032"/>
 <pad name="1" x="-1.75" y="0" drill="1.016" diameter="2.032" first="yes"/>
-<text x="-3.64" y="3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.81" y="3.81" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
 <package name="1X03">
 <wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
@@ -370,7 +370,7 @@
 <pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
 <pad name="2" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-3.81" y="1.27" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="1.27" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
 </package>
 <package name="1X06">
@@ -403,7 +403,7 @@
 <pad name="2" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="4" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-7.62" y="1.27" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="1.27" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <pad name="5" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="6" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
@@ -450,7 +450,7 @@
 <pad name="2" x="-6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="4" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-10.16" y="1.27" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-10.16" y="1.27" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <pad name="5" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="6" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="7" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -567,21 +567,6 @@
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="Ai_Electromechanical">
-<packages>
-<package name="SPST-SMD">
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.254" layer="21"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.254" layer="21"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="1.75" width="0.254" layer="21"/>
-<smd name="A@1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="A@2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="B@1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="B@2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -4205,6 +4190,22 @@
 </package>
 </packages>
 </library>
+<library name="Ai_Electromechanical">
+<packages>
+<package name="SPST-SMD06X06">
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.254" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.254" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.254" layer="21"/>
+<smd name="A@1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="A@2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B@1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B@2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<text x="-3.175" y="3.175" size="1.27" layer="21" ratio="15">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4425,124 +4426,124 @@ design rules under a new name.</description>
 <element name="LED35" library="Ai_LED" package="LED-WS2812" value="LED-WS2812" x="21.59" y="10.16" smashed="yes" rot="R180"/>
 <element name="LED34" library="Ai_LED" package="LED-WS2812" value="LED-WS2812" x="12.7" y="10.16" smashed="yes" rot="R180"/>
 <element name="LED33" library="Ai_LED" package="LED-WS2812" value="LED-WS2812" x="3.81" y="10.16" smashed="yes" rot="R180"/>
-<element name="C1" library="Ai_Passives" package="0603-CAP" value="" x="3.81" y="43.18" smashed="yes" rot="MR90">
+<element name="C1" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="3.81" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="4.445" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C2" library="Ai_Passives" package="0603-CAP" value="" x="12.7" y="43.18" smashed="yes" rot="MR90">
+<element name="C2" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="12.7" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.335" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C3" library="Ai_Passives" package="0603-CAP" value="" x="21.59" y="43.18" smashed="yes" rot="MR90">
+<element name="C3" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="21.59" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.225" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C4" library="Ai_Passives" package="0603-CAP" value="" x="30.48" y="43.18" smashed="yes" rot="MR90">
+<element name="C4" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="30.48" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="31.115" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C5" library="Ai_Passives" package="0603-CAP" value="" x="39.37" y="43.18" smashed="yes" rot="MR90">
+<element name="C5" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="39.37" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="40.005" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C6" library="Ai_Passives" package="0603-CAP" value="" x="48.26" y="43.18" smashed="yes" rot="MR90">
+<element name="C6" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="48.26" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="48.895" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C7" library="Ai_Passives" package="0603-CAP" value="" x="57.15" y="43.18" smashed="yes" rot="MR90">
+<element name="C7" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="57.15" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="57.785" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C8" library="Ai_Passives" package="0603-CAP" value="" x="66.04" y="43.18" smashed="yes" rot="MR90">
+<element name="C8" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="66.04" y="43.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="66.675" y="41.275" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C9" library="Ai_Passives" package="0603-CAP" value="" x="66.04" y="34.925" smashed="yes" rot="MR90">
+<element name="C9" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="66.04" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="66.675" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C10" library="Ai_Passives" package="0603-CAP" value="" x="57.15" y="34.925" smashed="yes" rot="MR90">
+<element name="C10" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="57.15" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="57.785" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C11" library="Ai_Passives" package="0603-CAP" value="" x="48.26" y="34.925" smashed="yes" rot="MR90">
+<element name="C11" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="48.26" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="48.895" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C12" library="Ai_Passives" package="0603-CAP" value="" x="39.37" y="34.925" smashed="yes" rot="MR90">
+<element name="C12" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="39.37" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="40.005" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C13" library="Ai_Passives" package="0603-CAP" value="" x="30.48" y="34.925" smashed="yes" rot="MR90">
+<element name="C13" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="30.48" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="31.115" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C14" library="Ai_Passives" package="0603-CAP" value="" x="21.59" y="34.925" smashed="yes" rot="MR90">
+<element name="C14" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="21.59" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.225" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C15" library="Ai_Passives" package="0603-CAP" value="" x="12.7" y="34.925" smashed="yes" rot="MR90">
+<element name="C15" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="12.7" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.335" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C16" library="Ai_Passives" package="0603-CAP" value="" x="3.81" y="34.925" smashed="yes" rot="MR90">
+<element name="C16" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="3.81" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="4.445" y="33.02" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C17" library="Ai_Passives" package="0603-CAP" value="" x="3.81" y="26.67" smashed="yes" rot="MR90">
+<element name="C17" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="3.81" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="4.445" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C18" library="Ai_Passives" package="0603-CAP" value="" x="12.7" y="26.67" smashed="yes" rot="MR90">
+<element name="C18" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="12.7" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.335" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C19" library="Ai_Passives" package="0603-CAP" value="" x="21.59" y="26.67" smashed="yes" rot="MR90">
+<element name="C19" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="21.59" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.225" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C20" library="Ai_Passives" package="0603-CAP" value="" x="30.48" y="26.67" smashed="yes" rot="MR90">
+<element name="C20" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="30.48" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="31.115" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C21" library="Ai_Passives" package="0603-CAP" value="" x="39.37" y="26.67" smashed="yes" rot="MR90">
+<element name="C21" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="39.37" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="40.005" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C22" library="Ai_Passives" package="0603-CAP" value="" x="48.26" y="26.67" smashed="yes" rot="MR90">
+<element name="C22" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="48.26" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="48.895" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C23" library="Ai_Passives" package="0603-CAP" value="" x="57.15" y="26.67" smashed="yes" rot="MR90">
+<element name="C23" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="57.15" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="57.785" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C24" library="Ai_Passives" package="0603-CAP" value="" x="66.04" y="26.67" smashed="yes" rot="MR90">
+<element name="C24" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="66.04" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="66.675" y="24.765" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C25" library="Ai_Passives" package="0603-CAP" value="" x="66.04" y="18.415" smashed="yes" rot="MR90">
+<element name="C25" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="66.04" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="66.675" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C26" library="Ai_Passives" package="0603-CAP" value="" x="57.15" y="18.415" smashed="yes" rot="MR90">
+<element name="C26" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="57.15" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="57.785" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C27" library="Ai_Passives" package="0603-CAP" value="" x="48.26" y="18.415" smashed="yes" rot="MR90">
+<element name="C27" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="48.26" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="48.895" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C28" library="Ai_Passives" package="0603-CAP" value="" x="39.37" y="18.415" smashed="yes" rot="MR90">
+<element name="C28" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="39.37" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="40.005" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C29" library="Ai_Passives" package="0603-CAP" value="" x="30.48" y="18.415" smashed="yes" rot="MR90">
+<element name="C29" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="30.48" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="31.115" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C30" library="Ai_Passives" package="0603-CAP" value="" x="21.59" y="18.415" smashed="yes" rot="MR90">
+<element name="C30" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="21.59" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.225" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C31" library="Ai_Passives" package="0603-CAP" value="" x="12.7" y="18.415" smashed="yes" rot="MR90">
+<element name="C31" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="12.7" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.335" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C32" library="Ai_Passives" package="0603-CAP" value="" x="3.81" y="18.415" smashed="yes" rot="MR90">
+<element name="C32" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="3.81" y="18.415" smashed="yes" rot="MR90">
 <attribute name="NAME" x="4.445" y="16.51" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C33" library="Ai_Passives" package="0603-CAP" value="" x="3.81" y="10.414" smashed="yes" rot="MR270">
+<element name="C33" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="3.81" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="4.445" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C34" library="Ai_Passives" package="0603-CAP" value="" x="12.7" y="10.414" smashed="yes" rot="MR270">
+<element name="C34" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="12.7" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="13.335" y="8.763" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C35" library="Ai_Passives" package="0603-CAP" value="" x="21.59" y="10.414" smashed="yes" rot="MR270">
+<element name="C35" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="21.59" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="22.225" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C36" library="Ai_Passives" package="0603-CAP" value="" x="30.48" y="10.414" smashed="yes" rot="MR270">
+<element name="C36" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="30.48" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="31.115" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C37" library="Ai_Passives" package="0603-CAP" value="" x="39.37" y="10.414" smashed="yes" rot="MR270">
+<element name="C37" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="39.37" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="40.005" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C38" library="Ai_Passives" package="0603-CAP" value="" x="48.26" y="10.414" smashed="yes" rot="MR270">
+<element name="C38" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="48.26" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="48.895" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C39" library="Ai_Passives" package="0603-CAP" value="" x="57.15" y="10.414" smashed="yes" rot="MR270">
+<element name="C39" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="57.15" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="57.785" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C40" library="Ai_Passives" package="0603-CAP" value="" x="66.04" y="10.414" smashed="yes" rot="MR270">
+<element name="C40" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="66.04" y="10.414" smashed="yes" rot="MR270">
 <attribute name="NAME" x="66.675" y="8.636" size="1.27" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="J1" library="Ai_Connectors" package="1X02-ST" value="1X02ST" x="11.43" y="3.81" smashed="yes">
@@ -4558,14 +4559,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="46.736" y="2.794" size="1.27" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="J5" library="Ai_Connectors" package="1X08" value="1X08" x="54.61" y="48.26" smashed="yes">
-<attribute name="NAME" x="65.024" y="47.244" size="1.27" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="65.024" y="46.482" size="1.27" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="J6" library="Ai_Connectors" package="1X10" value="1X10" x="30.48" y="48.26" smashed="yes">
-<attribute name="NAME" x="16.002" y="49.276" size="1.27" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="15.367" y="46.482" size="1.27" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="SW1" library="Ai_Electromechanical" package="SPST-SMD" value="SW-SPST" x="10.287" y="49.276" rot="R180"/>
 <element name="J2" library="Ai_Connectors" package="1X01" value="1X01" x="67.691" y="6.35" smashed="yes"/>
 <element name="U$9" library="Ai_Miscellany" package="AI-LOGO-L" value="AI-LOGOL" x="35.941" y="26.67" smashed="yes" rot="MR0"/>
+<element name="S1" library="Ai_Electromechanical" package="SPST-SMD06X06" value="SW-SPSTSMD06X06" x="10.033" y="49.911" smashed="yes" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -4591,46 +4592,7 @@ design rules under a new name.</description>
 <contactref element="LED21" pad="6"/>
 <contactref element="LED20" pad="6"/>
 <contactref element="LED19" pad="6"/>
-<contactref element="C33" pad="2"/>
-<contactref element="C40" pad="2"/>
-<contactref element="C34" pad="2"/>
-<contactref element="C35" pad="2"/>
 <contactref element="C36" pad="2"/>
-<contactref element="C37" pad="2"/>
-<contactref element="C38" pad="2"/>
-<contactref element="C39" pad="2"/>
-<contactref element="C1" pad="2"/>
-<contactref element="C8" pad="2"/>
-<contactref element="C7" pad="2"/>
-<contactref element="C6" pad="2"/>
-<contactref element="C5" pad="2"/>
-<contactref element="C4" pad="2"/>
-<contactref element="C3" pad="2"/>
-<contactref element="C2" pad="2"/>
-<contactref element="C9" pad="2"/>
-<contactref element="C16" pad="2"/>
-<contactref element="C10" pad="2"/>
-<contactref element="C11" pad="2"/>
-<contactref element="C12" pad="2"/>
-<contactref element="C13" pad="2"/>
-<contactref element="C14" pad="2"/>
-<contactref element="C15" pad="2"/>
-<contactref element="C17" pad="2"/>
-<contactref element="C24" pad="2"/>
-<contactref element="C18" pad="2"/>
-<contactref element="C19" pad="2"/>
-<contactref element="C20" pad="2"/>
-<contactref element="C21" pad="2"/>
-<contactref element="C22" pad="2"/>
-<contactref element="C23" pad="2"/>
-<contactref element="C25" pad="2"/>
-<contactref element="C32" pad="2"/>
-<contactref element="C26" pad="2"/>
-<contactref element="C27" pad="2"/>
-<contactref element="C28" pad="2"/>
-<contactref element="C29" pad="2"/>
-<contactref element="C30" pad="2"/>
-<contactref element="C31" pad="2"/>
 <contactref element="J1" pad="2"/>
 <contactref element="J4" pad="3"/>
 <contactref element="U1" pad="GND@2"/>
@@ -4647,8 +4609,6 @@ design rules under a new name.</description>
 <contactref element="LED30" pad="6"/>
 <contactref element="LED31" pad="6"/>
 <contactref element="LED32" pad="6"/>
-<contactref element="SW1" pad="A@1"/>
-<contactref element="SW1" pad="A@2"/>
 <wire x1="26.67" y1="50.8" x2="26.67" y2="48.26" width="0.254" layer="1"/>
 <wire x1="26.67" y1="50.8" x2="26.67" y2="48.006" width="0.8128" layer="1"/>
 <wire x1="40.64" y1="5.08" x2="40.64" y2="2.54" width="0.8128" layer="1"/>
@@ -4694,7 +4654,6 @@ design rules under a new name.</description>
 <via x="19.177" y="39.243" extent="1-16" drill="0.508"/>
 <wire x1="19.177" y1="39.243" x2="11.557" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="10.414" y1="39.243" x2="10.287" y2="39.37" width="0.8128" layer="16"/>
-<wire x1="3.81" y1="19.265" x2="3.214" y2="19.265" width="0.8128" layer="16"/>
 <wire x1="3.214" y1="19.265" x2="2.413" y2="20.066" width="0.8128" layer="16"/>
 <wire x1="2.413" y1="20.066" x2="2.286" y2="20.193" width="0.8128" layer="16"/>
 <wire x1="2.286" y1="20.193" x2="2.286" y2="22.733" width="0.8128" layer="16"/>
@@ -4713,19 +4672,14 @@ design rules under a new name.</description>
 <wire x1="2.286" y1="19.939" x2="2.413" y2="20.066" width="0.8128" layer="16"/>
 <wire x1="2.286" y1="6.858" x2="2.286" y2="14.605" width="0.8128" layer="16"/>
 <via x="2.286" y="6.858" extent="1-16" drill="0.6"/>
-<wire x1="21.59" y1="35.775" x2="21.59" y2="37.973" width="0.8128" layer="16"/>
 <wire x1="21.59" y1="37.973" x2="20.32" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="20.32" y1="39.243" x2="19.177" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="4.318" y1="47.498" x2="8.89" y2="47.498" width="0.8128" layer="16"/>
 <wire x1="8.89" y1="47.498" x2="9.144" y2="47.244" width="0.8128" layer="16"/>
 <via x="28.067" y="39.243" extent="1-16" drill="0.508"/>
 <wire x1="28.067" y1="39.243" x2="19.177" y2="39.243" width="0.8128" layer="16"/>
-<wire x1="12.7" y1="44.03" x2="12.7" y2="46.609" width="0.8128" layer="16"/>
-<wire x1="21.59" y1="44.03" x2="21.59" y2="46.609" width="0.8128" layer="16"/>
-<wire x1="39.37" y1="44.03" x2="39.37" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="39.37" y1="46.609" x2="30.734" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="30.734" y1="46.609" x2="25.146" y2="46.609" width="0.8128" layer="16"/>
-<wire x1="30.48" y1="44.03" x2="30.48" y2="46.355" width="0.8128" layer="16"/>
 <wire x1="30.48" y1="46.355" x2="30.734" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="36.97" y1="41.48" x2="36.97" y2="39.383" width="0.8128" layer="1"/>
 <wire x1="36.97" y1="39.383" x2="36.957" y2="39.243" width="0.8128" layer="1"/>
@@ -4744,18 +4698,14 @@ design rules under a new name.</description>
 <via x="54.737" y="39.243" extent="1-16" drill="0.508"/>
 <wire x1="54.737" y1="39.243" x2="46.863" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="46.863" y1="39.243" x2="45.847" y2="39.243" width="0.8128" layer="16"/>
-<wire x1="48.26" y1="44.03" x2="48.26" y2="46.355" width="0.8128" layer="16"/>
 <wire x1="48.26" y1="46.355" x2="48.006" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="48.006" y1="46.609" x2="39.37" y2="46.609" width="0.8128" layer="16"/>
-<wire x1="57.15" y1="44.03" x2="57.15" y2="46.482" width="0.8128" layer="16"/>
 <wire x1="57.15" y1="46.482" x2="57.023" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="57.023" y1="46.609" x2="48.006" y2="46.609" width="0.8128" layer="16"/>
-<wire x1="66.04" y1="44.03" x2="66.04" y2="46.228" width="0.8128" layer="16"/>
 <wire x1="66.04" y1="46.228" x2="65.659" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="65.659" y1="46.609" x2="57.023" y2="46.609" width="0.8128" layer="16"/>
 <wire x1="10.414" y1="39.243" x2="11.557" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="11.557" y1="39.243" x2="12.7" y2="38.1" width="0.8128" layer="16"/>
-<wire x1="12.7" y1="38.1" x2="12.7" y2="35.775" width="0.8128" layer="16"/>
 <wire x1="28.08" y1="41.48" x2="28.08" y2="39.256" width="0.8128" layer="1"/>
 <wire x1="28.08" y1="39.256" x2="28.067" y2="39.243" width="0.8128" layer="1"/>
 <wire x1="10.3" y1="33.225" x2="10.3" y2="31.001" width="0.8128" layer="1"/>
@@ -4787,16 +4737,11 @@ design rules under a new name.</description>
 <wire x1="63.64" y1="31.001" x2="63.627" y2="30.988" width="0.8128" layer="1"/>
 <via x="63.627" y="30.988" extent="1-16" drill="0.508"/>
 <wire x1="63.627" y1="30.988" x2="54.737" y2="30.988" width="0.8128" layer="16"/>
-<wire x1="30.48" y1="35.775" x2="30.48" y2="37.846" width="0.8128" layer="16"/>
 <wire x1="30.48" y1="37.846" x2="29.083" y2="39.243" width="0.8128" layer="16"/>
-<wire x1="39.37" y1="35.775" x2="39.37" y2="37.846" width="0.8128" layer="16"/>
 <wire x1="39.37" y1="37.846" x2="37.973" y2="39.243" width="0.8128" layer="16"/>
-<wire x1="48.26" y1="35.775" x2="48.26" y2="37.846" width="0.8128" layer="16"/>
 <wire x1="48.26" y1="37.846" x2="46.863" y2="39.243" width="0.8128" layer="16"/>
-<wire x1="57.15" y1="35.775" x2="57.15" y2="37.719" width="0.8128" layer="16"/>
 <wire x1="57.15" y1="37.719" x2="55.626" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="55.626" y1="39.243" x2="54.737" y2="39.243" width="0.8128" layer="16"/>
-<wire x1="66.04" y1="35.775" x2="66.04" y2="37.465" width="0.8128" layer="16"/>
 <wire x1="66.04" y1="37.465" x2="64.262" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="64.262" y1="39.243" x2="54.737" y2="39.243" width="0.8128" layer="16"/>
 <wire x1="10.3" y1="24.97" x2="10.3" y2="22.619" width="0.8128" layer="1"/>
@@ -4834,19 +4779,12 @@ design rules under a new name.</description>
 <via x="63.627" y="22.606" extent="1-16" drill="0.508"/>
 <wire x1="63.627" y1="22.606" x2="55.372" y2="22.606" width="0.8128" layer="16"/>
 <wire x1="55.372" y1="22.606" x2="54.737" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="66.04" y1="19.265" x2="66.04" y2="20.193" width="0.8128" layer="16"/>
 <wire x1="66.04" y1="20.193" x2="63.627" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="57.15" y1="19.265" x2="57.15" y2="20.828" width="0.8128" layer="16"/>
 <wire x1="57.15" y1="20.828" x2="55.372" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="48.26" y1="19.265" x2="48.26" y2="20.955" width="0.8128" layer="16"/>
 <wire x1="48.26" y1="20.955" x2="46.609" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="39.37" y1="19.265" x2="39.37" y2="21.082" width="0.8128" layer="16"/>
 <wire x1="39.37" y1="21.082" x2="37.846" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="30.48" y1="19.265" x2="30.48" y2="21.082" width="0.8128" layer="16"/>
 <wire x1="30.48" y1="21.082" x2="28.956" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="21.59" y1="19.265" x2="21.59" y2="21.082" width="0.8128" layer="16"/>
 <wire x1="21.59" y1="21.082" x2="20.066" y2="22.606" width="0.8128" layer="16"/>
-<wire x1="12.7" y1="19.265" x2="12.7" y2="21.209" width="0.8128" layer="16"/>
 <wire x1="12.7" y1="21.209" x2="11.303" y2="22.606" width="0.8128" layer="16"/>
 <wire x1="10.3" y1="16.715" x2="10.3" y2="14.491" width="0.8128" layer="1"/>
 <wire x1="10.3" y1="14.491" x2="10.287" y2="14.478" width="0.8128" layer="1"/>
@@ -4884,6 +4822,46 @@ design rules under a new name.</description>
 <wire x1="10.3" y1="6.69" x2="13.18" y2="3.81" width="0.8128" layer="1"/>
 <wire x1="10.541" y1="6.477" x2="10.541" y2="6.449" width="0.8128" layer="16"/>
 <wire x1="10.541" y1="6.449" x2="13.18" y2="3.81" width="0.8128" layer="16"/>
+<contactref element="S1" pad="A@2"/>
+<contactref element="S1" pad="A@1"/>
+<contactref element="C33" pad="2"/>
+<contactref element="C40" pad="2"/>
+<contactref element="C34" pad="2"/>
+<contactref element="C35" pad="2"/>
+<contactref element="C37" pad="2"/>
+<contactref element="C39" pad="2"/>
+<contactref element="C25" pad="2"/>
+<contactref element="C32" pad="2"/>
+<contactref element="C31" pad="2"/>
+<contactref element="C30" pad="2"/>
+<contactref element="C29" pad="2"/>
+<contactref element="C28" pad="2"/>
+<contactref element="C27" pad="2"/>
+<contactref element="C26" pad="2"/>
+<contactref element="C17" pad="2"/>
+<contactref element="C24" pad="2"/>
+<contactref element="C23" pad="2"/>
+<contactref element="C22" pad="2"/>
+<contactref element="C21" pad="2"/>
+<contactref element="C20" pad="2"/>
+<contactref element="C18" pad="2"/>
+<contactref element="C19" pad="2"/>
+<contactref element="C9" pad="2"/>
+<contactref element="C16" pad="2"/>
+<contactref element="C15" pad="2"/>
+<contactref element="C14" pad="2"/>
+<contactref element="C13" pad="2"/>
+<contactref element="C12" pad="2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C7" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C2" pad="2"/>
 </signal>
 <signal name="5V">
 <contactref element="JP1" pad="1"/>
@@ -6040,13 +6018,9 @@ design rules under a new name.</description>
 <wire x1="67.691" y1="7.711" x2="68.44" y2="8.46" width="0.254" layer="1"/>
 </signal>
 <signal name="RST">
-<contactref element="SW1" pad="B@1"/>
-<contactref element="SW1" pad="B@2"/>
 <contactref element="J4" pad="6"/>
 <contactref element="U1" pad="RESET"/>
 <wire x1="33.02" y1="5.08" x2="33.02" y2="2.54" width="0.254" layer="1"/>
-<wire x1="6.312" y1="47.026" x2="14.262" y2="47.026" width="0.254" layer="1"/>
-<wire x1="14.262" y1="47.026" x2="1.687" y2="47.026" width="0.254" layer="1"/>
 <wire x1="1.687" y1="47.026" x2="1.27" y2="46.609" width="0.254" layer="1"/>
 <via x="1.27" y="46.609" extent="1-16" drill="0.508"/>
 <wire x1="1.27" y1="46.609" x2="1.27" y2="6.477" width="0.254" layer="16"/>
@@ -6057,6 +6031,11 @@ design rules under a new name.</description>
 <wire x1="5.715" y1="5.588" x2="7.493" y2="3.81" width="0.254" layer="16"/>
 <wire x1="7.493" y1="3.81" x2="7.493" y2="1.524" width="0.254" layer="16"/>
 <wire x1="7.493" y1="1.524" x2="7.747" y2="1.27" width="0.254" layer="16"/>
+<contactref element="S1" pad="B@2"/>
+<contactref element="S1" pad="B@1"/>
+<wire x1="6.058" y1="47.661" x2="5.423" y2="47.026" width="0.254" layer="1"/>
+<wire x1="5.423" y1="47.026" x2="1.687" y2="47.026" width="0.254" layer="1"/>
+<wire x1="6.058" y1="47.661" x2="14.008" y2="47.661" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
 </signal>
