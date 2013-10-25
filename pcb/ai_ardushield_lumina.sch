@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -71,7 +71,12 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="Route13" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="mVias" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -80,15 +85,39 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="mtStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -15045,7 +15074,7 @@ Standard 8.5x11 US Letter frame</description>
 <smd name="4" x="2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <smd name="5" x="2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="3.175" size="1.27" layer="25" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15349,25 +15378,6 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <text x="-3.81" y="1.27" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
 </package>
-<package name="1X02">
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
-<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-2.54" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
-</package>
 <package name="1X06">
 <wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
@@ -15588,7 +15598,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="15">&gt;NAME</text>
 <wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
 </package>
 <package name="1X06-LONG">
@@ -15601,6 +15611,48 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <pad name="5" x="3.81" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
 <pad name="6" x="6.35" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
 <text x="-7.62" y="1.905" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="1X02">
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
+</package>
+<package name="1X10-SMD">
+<wire x1="-12.7" y1="1.27" x2="12.7" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="12.7" y1="-1.27" x2="-12.7" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-12.7" y1="1.27" x2="-12.7" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="12.7" y1="1.27" x2="12.7" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-12.7" y1="1.27" x2="-12.192" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-12.7" y1="1.27" x2="-12.7" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-12.7" y1="-1.27" x2="-12.192" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="12.192" y1="-1.27" x2="12.7" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="1.27" x2="12.192" y2="1.27" width="0.2032" layer="21"/>
+<smd name="1" x="-11.43" y="-2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="2" x="-8.89" y="2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="3" x="-6.35" y="-2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="4" x="-3.81" y="2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="5" x="-1.27" y="-2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="6" x="1.27" y="2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="7" x="3.81" y="-2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="8" x="6.35" y="2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="9" x="8.89" y="-2.032" dx="1.27" dy="5.334" layer="1"/>
+<smd name="10" x="11.43" y="2.032" dx="1.27" dy="5.334" layer="1"/>
+<text x="-13.208" y="-1.27" size="1.27" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15837,6 +15889,23 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMD" package="1X10-SMD">
+<connects>
+<connect gate="M10X1" pin="1" pad="1"/>
+<connect gate="M10X1" pin="10" pad="10"/>
+<connect gate="M10X1" pin="2" pad="2"/>
+<connect gate="M10X1" pin="3" pad="3"/>
+<connect gate="M10X1" pin="4" pad="4"/>
+<connect gate="M10X1" pin="5" pad="5"/>
+<connect gate="M10X1" pin="6" pad="6"/>
+<connect gate="M10X1" pin="7" pad="7"/>
+<connect gate="M10X1" pin="8" pad="8"/>
+<connect gate="M10X1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="1X01" prefix="J">
@@ -15858,7 +15927,19 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 </library>
 <library name="Ai_Electromechanical">
 <packages>
-<package name="SPST-SMD03X026">
+<package name="SW-SPST-SMD06X06">
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.254" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.254" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.254" layer="21"/>
+<smd name="A@1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="A@2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B@1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B@2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<text x="-3.175" y="3.175" size="1.27" layer="21" ratio="15">&gt;NAME</text>
+</package>
+<package name="SW-SPST-SMD03X026">
 <description>Shape on the symbol is misleading, 1-2 are internally connected, as well as 3-4.  Digi-Key: CKN9435CT-ND</description>
 <wire x1="-1.5" y1="-0.4" x2="-1.5" y2="0.4" width="0.2032" layer="21"/>
 <wire x1="-1.045" y1="1.3" x2="1.035" y2="1.3" width="0.2032" layer="21"/>
@@ -15873,20 +15954,9 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="1.8" y1="1.3" x2="1.8" y2="-1.3" width="0.127" layer="51"/>
 <wire x1="1.8" y1="-1.3" x2="-1.8" y2="-1.3" width="0.127" layer="51"/>
 <wire x1="-1.8" y1="-1.3" x2="-1.8" y2="1.3" width="0.127" layer="51"/>
+<text x="-1.905" y="1.905" size="1.27" layer="21" ratio="15">&gt;NAME</text>
 </package>
-<package name="SPST-SMD06X06">
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.254" layer="21"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.254" layer="21"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="1.75" width="0.254" layer="21"/>
-<smd name="A@1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="A@2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="B@1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="B@2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<text x="-3.175" y="3.175" size="1.27" layer="21" ratio="15">&gt;NAME</text>
-</package>
-<package name="SPST-TH06X06">
+<package name="SW-SPST-TH06X06">
 <wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
 <wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
 <wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
@@ -15920,7 +15990,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 </package>
 </packages>
 <symbols>
-<symbol name="SPST-4PIN">
+<symbol name="SW-SPST-4PIN">
 <wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
 <wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
@@ -15946,10 +16016,10 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <devicesets>
 <deviceset name="SW-SPST" prefix="S">
 <gates>
-<gate name="G$1" symbol="SPST-4PIN" x="0" y="0"/>
+<gate name="G$1" symbol="SW-SPST-4PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD03X026" package="SPST-SMD03X026">
+<device name="SMD03X026" package="SW-SPST-SMD03X026">
 <connects>
 <connect gate="G$1" pin="A@1" pad="1 2"/>
 <connect gate="G$1" pin="B@1" pad="3 4"/>
@@ -15958,7 +16028,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMD06X06" package="SPST-SMD06X06">
+<device name="SMD06X06" package="SW-SPST-SMD06X06">
 <connects>
 <connect gate="G$1" pin="A@1" pad="A@1 A@2"/>
 <connect gate="G$1" pin="B@1" pad="B@1 B@2"/>
@@ -15967,7 +16037,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="TH06X06" package="SPST-TH06X06">
+<device name="TH06X06" package="SW-SPST-TH06X06">
 <connects>
 <connect gate="G$1" pin="A@1" pad="A@1"/>
 <connect gate="G$1" pin="B@1" pad="B@1"/>
@@ -15992,7 +16062,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <parts>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
-<attribute name="REV" value="1.0"/>
+<attribute name="REV" value="1.1"/>
 </part>
 <part name="U1" library="Ai_Boards" deviceset="ARDUINO" device="UNOR3-STRAIGHT" value="ARDUINOUNOR3-STRAIGHT"/>
 <part name="LED1" library="Ai_LED" deviceset="LED-WS2812" device=""/>
@@ -16202,7 +16272,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <instance part="U$5" gate="G$1" x="24.13" y="22.86"/>
 <instance part="GND5" gate="GND" x="24.13" y="12.7"/>
 <instance part="U$6" gate="G$1" x="10.16" y="170.18"/>
-<instance part="U$7" gate="G$1" x="36.83" y="22.86"/>
+<instance part="U$7" gate="G$1" x="35.56" y="22.86"/>
 <instance part="U$8" gate="1" x="30.48" y="22.86" smashed="yes"/>
 <instance part="J3" gate="M06X1" x="3.81" y="137.16"/>
 <instance part="J4" gate="M08X1" x="3.81" y="157.48"/>
@@ -16899,10 +16969,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <pinref part="LED15" gate="U1" pin="VSS"/>
 <wire x1="134.62" y1="151.13" x2="137.16" y2="151.13" width="0.1524" layer="91"/>
 <junction x="137.16" y="151.13"/>
-<wire x1="133.35" y1="62.23" x2="134.62" y2="62.23" width="0.1524" layer="91"/>
-<junction x="137.16" y="62.23"/>
 <pinref part="LED9" gate="U1" pin="VSS"/>
-<wire x1="134.62" y1="62.23" x2="137.16" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="44.45" x2="137.16" y2="44.45" width="0.1524" layer="91"/>
 <junction x="137.16" y="44.45"/>
 <pinref part="LED21" gate="U1" pin="VSS"/>
@@ -16918,7 +16985,8 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="142.24" y1="128.27" x2="137.16" y2="128.27" width="0.1524" layer="91"/>
 <junction x="137.16" y="128.27"/>
 <pinref part="LED10" gate="U1" pin="VSS"/>
-<junction x="134.62" y="62.23"/>
+<wire x1="134.62" y1="62.23" x2="137.16" y2="62.23" width="0.1524" layer="91"/>
+<junction x="137.16" y="62.23"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="U1" pin="VSS"/>
@@ -16931,7 +16999,8 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="64.77" y1="107.95" x2="64.77" y2="90.17" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="90.17" x2="64.77" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="72.39" x2="64.77" y2="54.61" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="54.61" x2="64.77" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="54.61" x2="64.77" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="36.83" x2="64.77" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="54.61" x2="64.77" y2="54.61" width="0.1524" layer="91"/>
 <junction x="64.77" y="54.61"/>
 <pinref part="LED6" gate="U1" pin="VSS"/>
@@ -16949,6 +17018,9 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <pinref part="LED2" gate="U1" pin="VSS"/>
 <wire x1="69.85" y1="143.51" x2="64.77" y2="143.51" width="0.1524" layer="91"/>
 <junction x="64.77" y="143.51"/>
+<pinref part="LED8" gate="U1" pin="VSS"/>
+<wire x1="69.85" y1="36.83" x2="64.77" y2="36.83" width="0.1524" layer="91"/>
+<junction x="64.77" y="36.83"/>
 </segment>
 <segment>
 <wire x1="207.01" y1="168.91" x2="209.55" y2="168.91" width="0.1524" layer="91"/>
@@ -16979,14 +17051,9 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <junction x="209.55" y="133.35"/>
 <wire x1="207.01" y1="151.13" x2="209.55" y2="151.13" width="0.1524" layer="91"/>
 <junction x="209.55" y="151.13"/>
-<wire x1="205.74" y1="62.23" x2="207.01" y2="62.23" width="0.1524" layer="91"/>
-<junction x="209.55" y="62.23"/>
-<wire x1="207.01" y1="62.23" x2="209.55" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="207.01" y1="44.45" x2="209.55" y2="44.45" width="0.1524" layer="91"/>
 <junction x="209.55" y="44.45"/>
 <pinref part="LED25" gate="U1" pin="VSS"/>
-<pinref part="LED26" gate="U1" pin="VSS"/>
-<junction x="207.01" y="62.23"/>
 <pinref part="LED27" gate="U1" pin="VSS"/>
 <pinref part="LED28" gate="U1" pin="VSS"/>
 <pinref part="LED29" gate="U1" pin="VSS"/>
@@ -17025,6 +17092,9 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="214.63" y1="143.51" x2="214.63" y2="146.05" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="146.05" x2="209.55" y2="146.05" width="0.1524" layer="91"/>
 <junction x="209.55" y="146.05"/>
+<pinref part="LED26" gate="U1" pin="VSS"/>
+<wire x1="207.01" y1="62.23" x2="209.55" y2="62.23" width="0.1524" layer="91"/>
+<junction x="209.55" y="62.23"/>
 </segment>
 <segment>
 <pinref part="C36" gate="G$1" pin="2"/>
@@ -17039,7 +17109,8 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="19.05" y1="41.91" x2="26.67" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="26.67" y1="41.91" x2="33.02" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="41.91" x2="36.83" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="36.83" y1="41.91" x2="46.99" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="41.91" x2="40.64" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="41.91" x2="46.99" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="46.99" y1="41.91" x2="53.34" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="41.91" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C34" gate="G$1" pin="2"/>
@@ -17184,6 +17255,9 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <wire x1="12.7" y1="104.14" x2="12.7" y2="102.87" width="0.1524" layer="91"/>
 <junction x="12.7" y="102.87"/>
 <junction x="36.83" y="102.87"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="43.18" x2="40.64" y2="41.91" width="0.1524" layer="91"/>
+<junction x="40.64" y="41.91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -17222,12 +17296,6 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <pinref part="S1" gate="G$1" pin="A@1"/>
 </segment>
 </net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="LED8" gate="U1" pin="VSS"/>
-<wire x1="69.85" y1="36.83" x2="64.77" y2="36.83" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VLED" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -17244,8 +17312,8 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <net name="5V" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="3.81" x2="36.83" y2="3.81" width="0.1524" layer="91"/>
-<wire x1="36.83" y1="3.81" x2="36.83" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="3.81" x2="35.56" y2="3.81" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="3.81" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="5V"/>
 </segment>
 <segment>
@@ -17431,12 +17499,13 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <pinref part="U1" gate="G$1" pin="D8"/>
 <pinref part="J6" gate="M10X1" pin="10"/>
 <wire x1="54.61" y1="152.4" x2="52.07" y2="152.4" width="0.1524" layer="91"/>
-<label x="48.26" y="152.4" size="1.778" layer="95" ratio="15"/>
+<label x="48.26" y="152.4" size="1.524" layer="95" ratio="15"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="U1" pin="DI"/>
 <wire x1="97.79" y1="168.91" x2="100.33" y2="168.91" width="0.1524" layer="91"/>
-<label x="96.52" y="168.91" size="1.778" layer="95" ratio="15"/>
+<label x="100.33" y="173.99" size="1.27" layer="95" ratio="15" rot="R90" xref="yes"/>
+<wire x1="100.33" y1="173.99" x2="100.33" y2="168.91" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$72" class="0">
@@ -17475,7 +17544,7 @@ A 5x5mm SMD LED with built-in controller IC.</description>
 <pinref part="J4" gate="M08X1" pin="6"/>
 <pinref part="U1" gate="G$1" pin="RESET"/>
 <wire x1="8.89" y1="160.02" x2="11.43" y2="160.02" width="0.1524" layer="91"/>
-<label x="11.43" y="160.02" size="1.778" layer="95" ratio="15"/>
+<label x="11.43" y="160.02" size="1.524" layer="95" ratio="15"/>
 </segment>
 </net>
 <net name="N$35" class="0">
