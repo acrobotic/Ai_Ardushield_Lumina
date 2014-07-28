@@ -1,6 +1,6 @@
 #include "Ai_WS2811.h"
 
-#define NUM_PIXELS 3
+#define NUM_PIXELS 40
 #define DATA_PIN 8
 
 Ai_WS2811 ws2811;
@@ -30,8 +30,8 @@ void rainbow(){
     for(int i = 255; i >= 0; i--)
     {
       int val = i;
-      for (int led = 0; led < 3; led++) {
-          val = (val + 12) % 255;
+      for (int led = 0; led < NUM_PIXELS; led++) {
+          val = (val + 255/NUM_PIXELS) % 255;
           setHue(val, led);
       }
       ws2811.sendLedData();

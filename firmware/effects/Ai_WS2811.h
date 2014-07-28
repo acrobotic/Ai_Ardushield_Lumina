@@ -20,7 +20,6 @@ class Ai_WS2811
 
   public:
     byte _r, _g, _b;
-    
     uint8_t *led_arr;
     void init(uint8_t,uint16_t);
     void sendLedData(void);
